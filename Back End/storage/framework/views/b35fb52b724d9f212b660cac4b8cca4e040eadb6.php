@@ -30,7 +30,8 @@
                         <td><?php echo e($item->price); ?></td>
                         <td><?php echo e($item->quantity); ?></td>
                         <td>
-                            <a href="#" class="btn btn-info btn-sm">   
+                            <a href="<?php echo e(route('products.gallery', $item->id)); ?>" class="btn btn-info btn-sm"> 
+                              <!-- <a href="#" class="btn btn-info btn-sm">    -->
                                 <i class="fa fa-picture-o"></i>
                             </a>
                             <a href="<?php echo e(route('products.edit', $item->id)); ?>" class="btn btn-primary btn-sm">
