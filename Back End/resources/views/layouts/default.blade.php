@@ -6,40 +6,36 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Admin HIMSI Business</title>
+    <title>ShaynaAdmin - HTML5 Admin Template</title>
     <meta name="description" content="ShaynaAdmin - HTML5 Admin Template">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- Style -->
-    @stack('before.style')
+    {{-- Style --}}
+    @stack('before-style')
     @include('includes.style')
-    @stack('after.style')
+    @stack('after-style')
 
 </head>
 
 <body>
-    <!-- Sidebar -->
+    {{-- Sidebar --}}
     @include('includes.sidebar')
 
-    <!-- Right Panel -->
     <div id="right-panel" class="right-panel">
-    <!-- Navbar -->
-    @include('includes.navbar')
+        {{-- Navbar --}}
+        @include('includes.navbar')
 
-        <!-- Content -->
         <div class="content">
-            <!-- Content -->
+            {{-- Content --}}
             @yield('content')
         </div>
-        <!-- /.content -->
         <div class="clearfix"></div>
     </div>
-    <!-- /#right-panel -->
 
-    <!-- Script -->
-    @stack('before.script')
+    {{-- Script --}}
+    @stack('before-script')
     @include('includes.script')
-    @stack('after.script')
+    @stack('after-script')
 
 </body>
 </html>
